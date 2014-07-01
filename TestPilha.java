@@ -26,8 +26,12 @@ public class TestPilha {
             }
         }
         V=sort(V);
-        for (int i = 0; i < 20; i++) {
-            System.out.println(V[i].getK());
+        for (int i = 0; i < V.length; i++) {
+            System.out.println("Tamanho da pilha: " + V[i].getK());
+            while (!V[i].isEmpty()){
+                System.out.print(V[i].pop() + " ");
+            }
+            System.out.println();
         }
 
     }
