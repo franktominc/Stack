@@ -48,7 +48,7 @@ public class Pilha<T extends Comparable<T>> extends List<T> {
         return k;
     }
     public boolean compareTo(Pilha<T> X){
-        if (k == X.getK())
+        if (k == X.getK() && k > 0)
             return top().compareTo(X.top()) <= 0;
         return k < X.getK();
     }
